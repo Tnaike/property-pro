@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/font/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe+UI:400,500,600,700&lang=en">    
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/layout.css">
+    <title>PropertyPro Lite</title>
+</head>
+<body>
+    <div class="page-wrap">
+        <header class="header">
+             <div class="nav__section">
+                <nav id="navbar" class="navbar">
+                    <div class="container">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <a class="navbar-logo" href="index.html">
+                                <img src="assets/images/propertypro_logo.png" class="prop_sitelogo" alt="Property Pro logo">
+                            </a>
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-fold collapse">
+                            <ul id="top-menu" class="navbar-nav">
+                                <li class="active"><a href="index.html">Home</a></li>                                <li class="adPost__btn">
+                                    <a href="sign_in.html" class="post_property_btn btn_primary txt-uppercase">Post a Property</a>
+                                </li>
+                                <li id="signIn-reg_btn" class=""><a href="sign_in.html" class=""><i class="fa fa-user-o m-right-3"></i>  Login/Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section  class="banner_disp_content" style="background-image: url(assets/images/city__bg.jpg);">
+            <div class="container">
+            <div class="row">
+                <div class="search_panel_wrap">
+                    <h2 class="caption_title">Find your next dream home.</h2>
+                        <div class="form-wrap">
+                            <div class="input__wrap">
+                                <form action="property-forsale.html" method="post" id="prop__search_form">
+                                    <div class="col-l8 col-m8 col-s12 col-x12 input_col_boxes">
+                                        <div class="form_box">
+                                            <div class="input_box">
+                                                <span class="input-icon-wrap f-s-16"><i class="fa fa-search txt-blue"></i></span>
+                                                <input type="search" class="form-field search-input-sm" name="search_property_txt" placeholder="Search for property e.g(4 Bedroom for rent in Anthony)">
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-l4 col-m4 col-s12 col-x12 input_col_boxes">
+                                        <div class="form_box">
+                                            <div class="input_box">
+                                                <span class="input-icon-wrap f-s-16"><i class="fa fa-map-signs txt-blue"></i></span>
+                                                <select name="category" id="prop_category" class="form-field">
+                                                    <option value="">Property Category </option>
+                                                    <option value="For Sale">For Sale</option>
+                                                    <option value="For Rent">For Rent</option>
+                                                </select>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-l8 col-m8 col-s12 col-x12 pad-0">
+                                        <div class="col-l7 col-m7 col-s12 col-x12 input_col_boxes">
+                                            <div class="form_box">
+                                                <div class="input_box">
+                                                    <span class="input-icon-wrap f-s-16"><i class="fa fa-home txt-blue"></i></span>
+                                                    <select name="type" id="prop_type" class="form-field">
+                                                        <option value="">Property Type</option>
+                                                        <option value="self-contain">Self Contain</option>
+                                                        <option value="mini-flat">Mini Flat</option>
+                                                        <option value="apartment">Apartment</option>
+                                                        <option value="duplex">Duplex</option>                                                        <option value="land">Lands</option>
+                                                        <option value="office-space">Office Spaces</option>
+                                                        <option value="commercial-property">Commercial Properties</option>
+                                                    </select>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-l5 col-m5 col-s12 col-x12 input_col_boxes">
+                                            <div class="form_box">
+                                                <div class="input_box">
+                                                    <span class="input-icon-wrap f-s-16"><i class="fa fa-bed txt-blue"></i></span>
+                                                    <select name="bedroom" id="prop_bedroom" class="form-field ">
+                                                        <option value="">Bedroom</option>
+                                                        <option value="1">1 bedroom</option>
+                                                        <option value="2">2 bedroom</option>
+                                                        <option value="3">3 bedroom</option>
+                                                        <option value="4">4 bedroom</option>
+                                                        <option value="5">5 bedroom</option>
+                                                    </select>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-l4 col-m4 col-s12 col-x12 input_col_boxes">
+                                        <div class="form_box">
+                                            <button type="submit" class="submit_btn btn_primary txt-uppercase">Search Property</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="features__section res-pos hidden-x">
+            <div class="container">
+                <div class="row">
+                    <div class="more__features">
+                        <span class="">Nigeria&#039;s Top Property Agency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-l12 col-m12 col-s12 col-x12 ls_advert-wrap hidden-x">
+            <div class="ad__wrap">
+                <a href=""><img src="assets/images/ads/advert001.png"></a>
+            </div>
+        </div>
+
+        <!-- Listing section -->
+        <section class="recentList_section res-pos section-pad bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-l12 col-m12 col-s12 col-x12"><h3 class="tagHeader">Recent Listings</h3></div>
+                    <div class="col-l12 col-m12 col-s12 col-x12 propList__wrap pad-0 m-bt-20">
+                        <ul class="prop__feature-listing">
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/property-9.jpg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Apartment</p>
+                                                    <p class="featured__cat">For Sale</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count">2</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 63,000,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="3 Bedroom Apartment for Sale"><h3>3 Bedroom Apartment for Sale</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Ikeja, Lagos">Ikeja, Lagos</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 15, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/property-01.jpeg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Duplex</p>
+                                                    <p class="featured__cat">For Sale</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count"> 3</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 120,000,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="Tastefully Finished 4 Bedrooms Duplex for Sale"><h3>Tastefully Finished 4 Bedrooms Duplex for Sale</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Lekki Phase I, Lagos">Lekki Phase I, Lagos</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 15, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/property-13.jpg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Duplex</p>
+                                                    <p class="featured__cat">For Sale</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count">1</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 115,000,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="5 Terraced Duplex for Sale"><h3>5 Terraced Duplex for Sale</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Gwarinpa, Abuja">Gwarinpa, Abuja</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 14, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/220-Pres.jpg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Apartment</p>
+                                                    <p class="featured__cat">For Sale</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count">2</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 13,200,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="Blocks of 2 Bedroom Apartment for Sale"><h3>Blocks of 2 Bedroom Apartment for Sale</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Ikoyi, Lagos">Ikoyi, Lagos</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 14, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/property-02.jpg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Apartment</p>
+                                                    <p class="featured__cat">For Rent</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count"> 3</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 850,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="2 Bedroom Apartment for Sale"><h3>2 Bedroom Apartment for Rent</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Anthony, Lagos">Anthony, Lagos</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 14, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="propertylist_listing col-l4 col-m4 col-s6 col-x12 col_dual">
+                                <div class="prop__list-box bg-white m-bt-30">
+                                    <a href="property.html" class="prop__listing-click">
+                                        <figure style="background-image:url(assets/images/GRA_property.jpg)" class="prop__listing-img listing-bg">
+                                            <div class="prop__listing-data-wrap">
+                                                <div class="prop__listing-featured">
+                                                    <p class="featured__type">Apartment</p>
+                                                    <p class="featured__cat">For Sale</p>
+                                                </div>
+                                                <div class="prop__listing-data">
+                                                    <div class="propList_pic-post" title="views"><i class="fa fa-eye"></i> <span class="views_count">2</span></div>
+                                                    <div class="propList_price bg-tag-lblack"><strong>₦ 46,200,000</strong></div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                    <div class="pc-list-data-wrapper">
+                                        <div class="propList__data res-pos">
+                                            <div class="propList-data-cap">
+                                                <a href="property.html" alt="Blocks of 2 Bedroom Apartment for Sale"><h3>Blocks of 2 Bedroom Apartment for Sale</h3></a>
+                                            </div>
+                                            <div class="propList-data-locate">
+                                                <span><i class="fa fa-map-marker m-right-3"></i></span>
+                                                <span class="txt-blue" alt="Ikoyi, Lagos">Ikoyi, Lagos</span>
+                                            </div>
+                                            <div class="full-detail res-pos">
+                                                <p class="flow-left"><a href="property.html">More Details</a></p>
+                                                <p class="prop-date flow-right"><i class="fa fa-calendar m-right-5"></i> Jun 14, 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="listing-pagination res-pos clearX">
+                            <nav class="page__nav">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                              </ul>
+                            </nav>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-panel res-pos clearX">
+            <div class="container">
+              <div class="row">
+                <div class="footerinfo">
+                    <div class="widget-qlink res-pos m-bt-20">
+                        <div class="col-l5 col-m5 col-s12 col-x12">
+                            <h3 class="widget__title">About PropertyPro</h3>
+                            <div class="desc_txt">
+                                <p>PropertyPro is Nigeria's leading property Agency with property listings for sale and rent.
+                                    We offer an easy way to find property services in Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="col-l4 col-m4 col-s12 col-x12">
+                            <div class="downloadApp-wrap res-pos m-bt-10">
+                                <h3 class="widget__title">Download Our Mobile App</h3>
+                                <div class="downloadApp-link">
+                                    <a href="https://play.google.com/store/apps/" target="_blank" rel="nofollow"><img src="assets/images/icons/googleplay-app.png" class="google-play"></a>
+                                    <a href="https://itunes.apple.com/us/app/" target="_blank" rel="nofollow"><img src="assets/images/icons/apple-app-store.svg" class="app-store"></a>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="col-l3 col-m3 col-s12 col-x12">
+                            <h3 class="widget__title">Connect with us</h3>
+                            <div class="followus-social m-bt-10">
+                                <ul class="social-icons">
+                                    <li class="facebook">
+                                        <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="pinterest">
+                                        <a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class=""><span class="foot__copyright res-pos">Copyright © 2019 PropertyPro.com. All Rights Reserved.</span></div>
+                </div>
+              </div>
+            </div>
+        </footer>
+    </div>
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
