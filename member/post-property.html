@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<title>Post A Property - PropertyPro</title>
+<link rel="shortcut icon" href="../assets/images/icons/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../assets/font/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../assets/css/custom.css">
+</head>
+
+<body>
+<div id="admin-body">
+    <div id='overlay'></div>
+    <div class="admin-wrap">
+        <div class="header clearX">
+            <nav class="navbar"> 
+                   <div class="full-container">
+                    <div class="navbar-header">
+                        <button type="button" class="sidebar-toggle" id="sidebar-toggle">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>        
+                        <a class="navbar-logo" href="../index.html"><img src="../assets/images/propertypro_logo.png"/></a>
+                    </div>
+                  </div>     
+            </nav>
+        </div>	<!--/.header -->
+        
+         <div id="main-wrapper">
+            <div class="dashboard-sidebar" id="dashboard-sidebar">
+                <div class="dashboard-section">
+                    <div class="sideScroll">
+                        <div class="board-user-type">
+                            <h3 class="board-header">Umar Christian</h3>
+                        </div>                    
+                        <ul class="nav user-profile-menu">
+                            <li class=""><a href="dashboard.html"><i class="fa fa-desktop"></i>Dashboard</a></li>
+                            <li class=""><a href="edit-profile.html"><i class="fa fa-address-card-o"></i>My Profile</a></li>
+                            <li class="active"><a href="post-property.html"><i class="fa fa-plus"></i>Post a Property</a></li>
+                            <li class=""><a href="listings.html"><i class="fa fa-building-o"></i>My Listings</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="change-password.html"><i class="fa fa-lock fa-ico"></i> Change Password</a></li>
+                            <li class=""><a href="../index.html"><i class="fa fa-sign-out"></i>Log Out</a></li>
+                        </ul>
+                   
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="full-container m-bt-100">
+                    <div class="row">
+                	<div class="main-content m-bt-40">                        
+                        <div class="page-header-wrap res-pos">
+                            <ul class="nav">
+                                <li class="col-l5 col-m5 col-s12 col-x12 dashboard-title">
+                                    <h4 class="m-right-10">Post A Property</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-data-wrap">
+                            <div class="data_summary-wrap">
+                                <div class="board-Section inputWrap">
+                                    <form action="property-image.html" method="post" id="teamList_form">                                            
+                                        <div class="formWrapper">
+                                            <div class="postProperty_dataWrap clearX">
+                                                <div class="postProperty_datas">
+                                                    <div class="col-l8 col-m8 col-s12 col-x12">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Title <sup>*</sup></label>
+                                                            <input type="text" name="propertyTitle" maxlength="80" id="propertyTitle" class="form-field" placeholder="e.g. Tastefully Finished 4 Bedrooms Bungalow with BQ">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x12">
+                                                        <div class="form_box">
+                                                       		<label class="form_lbl">Property Category <sup>*</sup></label>
+                                                            <select name="categoryID" id="categoryID" class="form-field">
+                                                                <option value="">Select Category</option>
+                                                                <option value="sale">For Sale</option>
+                                                                <option value="rent">For Rent</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x12">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Property Type <sup>*</sup></label>
+                                                            <select name="typeID" id="typeID" class="form-field">
+                                                                <option value="">Property Type</option>
+                                                                <option value="self-contain">Self Contain</option>
+                                                                <option value="mini-flat">Mini Flat</option>
+                                                                <option value="apartment">Apartment</option>
+                                                                <option value="duplex">Duplex</option>
+                                                                <option value="land">Lands</option>
+                                                                <option value="office-space">Office Spaces</option>
+                                                                <option value="commercial-property">Commercial Properties</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x6">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Area <sup>*</sup></label>
+                                                            <input type="text" name="propertyArea" id="propertyArea" class="form-field" title="Property Area" placeholder="Area">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x6">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">State <sup>*</sup></label>                                                            
+                                                            <select name="propertyState" id="propertyState" class="form-field">
+                                                                <option value="">Select State</option>                                	
+                                                                <option value="Abia">Abia</option>                               	
+                                                                <option value="Abuja">Abuja</option>
+                                                                <option value="Adamawa">Adamawa</option>
+                                                                <option value="Anambra">Anambra</option>
+                                                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                                                <option value="Bauchi">Bauchi</option>
+                                                                <option value="Bayelsa">Bayelsa</option>
+                                                                <option value="Benue">Benue</option>
+                                                                <option value="Borno">Borno</option>
+                                                                <option value="Cross River">Cross River</option>
+                                                                <option value="Delta">Delta</option>
+                                                                <option value="Ebonyi">Ebonyi</option>
+                                                                <option value="Enugu">Enugu</option>
+                                                                <option value="Edo">Edo</option>
+                                                                <option value="Ekiti">Ekiti</option>
+                                                                <option value="Gombe">Gombe</option>
+                                                                <option value="Imo">Imo</option>
+                                                                <option value="Jigawa">Jigawa</option>
+                                                                <option value="Kaduna">Kaduna</option>
+                                                                <option value="Kano">Kano</option>
+                                                                <option value="Katsina">Katsina</option>
+                                                                <option value="Kebbi">Kebbi</option>
+                                                                <option value="Kogi">Kogi</option>
+                                                                <option value="Kwara">Kwara</option>
+                                                                <option value="Lagos">Lagos</option>
+                                                                <option value="Nasarawa">Nasarawa</option>
+                                                                <option value="Niger">Niger</option>
+                                                                <option value="Ogun">Ogun</option>
+                                                                <option value="Ondo">Ondo</option>
+                                                                <option value="Osun">Osun</option>
+                                                                <option value="Oyo">Oyo</option>
+                                                                <option value="Plateau">Plateau</option>
+                                                                <option value="Rivers">Rivers</option>
+                                                                <option value="Sokoto">Sokoto</option>
+                                                                <option value="Taraba">Taraba</option>
+                                                                <option value="Yobe">Yobe</option>
+                                                                <option value="Zamfara">Zamfara</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearX"></div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x6">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Bedrooms </label>
+                                                            <select name="propertyBeds" id="propertyBeds" class="form-field">
+                                                                <option value="">Bedrooms</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l4 col-m4 col-s6 col-x6">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Bathrooms </label>
+                                                            <select name="propertyBaths" id="propertyBaths" class="form-field">
+                                                                <option value="">Bathrooms</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="res-pos clearX">
+                                                    <div class="col-l4 col-m4 col-s12 col-x12">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Price (&#8358;)</label>
+                                                            <input type="number" name="propertyPrice" id="propertyPrice" min="1" class="form-field" placeholder="e.g. 350000">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-l8 col-m8 col-s12 col-x12">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Upload Image</label>
+                                                            <input type="file" name="propertyImg" id="propertyImg" class="form-field" placeholder="e.g. 350000">
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="formDivider"></div>
+                                                    <div class="col-l12 col-m12 col-s12 col-x12">
+                                                        <div class="form_box">
+                                                            <label class="form_lbl">Description</label>
+                                                            <textarea name="propertyDescription" id="propertyDescription" maxlength="200" rows="8" class="form-field" placeholder="Property Description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearX">
+                                                    <div class="col-l12 col-m12 col-s12 col-x12 m-tp-20 txt-right">
+                                                        <div class="form_box">
+                                                            <button type="submit" name="submit" class="form_btn btn_primary" id="saveBtn">Save</button>
+                                                            <button type="button" name="cancel" class="form_btn btn-normal m-left-10">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer__alt res-pos">
+                <span>Copyright &copy; 2019 PropertyPro.com</span>
+                <ul class="footer-alt__nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Script -->
+<script type="text/javascript" src="../assets/js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
