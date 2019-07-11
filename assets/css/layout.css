@@ -204,6 +204,10 @@ input.form-field:hover, .input_box .form-field-1:hover {border-color: rgba(2, 2,
     margin: 0;
     background: var(--white);
     z-index: 800;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    -webkit-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
 }
 .nav__section .navbar {
     position: relative;
@@ -911,6 +915,7 @@ footer.footer-panel {background:#151515;border-top:1px solid #3c3f4a;}
     .search_panel_wrap{padding:0 15px;}
     .caption_title {font-size: 1.4em;margin-bottom: 5px;}   
     .hidden-tab{display:none!important}
+    .navbar-header, .nav__section .navbar-fold {float: none; text-align: center;}
 }
 @media (max-width: 992px){
     .block-wrap .pc_listBlock-img {
