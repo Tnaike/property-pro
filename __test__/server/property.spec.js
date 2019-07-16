@@ -42,7 +42,7 @@ describe('PropertyController', () => {
         .send({ ...property })
         .end((err, res) => {
           const { status, message } = res.body;
-          console.log(res.body);
+
           expect(status).to.equal('error');
           expect(message).to.equal('Owner does not exist');
           done();
@@ -112,7 +112,7 @@ describe('PropertyController', () => {
         .end((err, res) => {
           const { status, data } = res.body;
           expect(status).to.equal('success');
-          console.log(data.property);
+
           expect(data.property.status).to.equal(0);
           done();
         });
