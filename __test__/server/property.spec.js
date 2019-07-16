@@ -18,8 +18,8 @@ const property = {
   type: 'Apartment',
   image_url: 'http://cloudinary.com/sdfsofsfsjfslkfs',
   description: 'An exquisite 3 bedroom flat with ensuit',
-  bath: 3,
-  bed: 2
+  bathroom: 3,
+  bedroom: 2
 };
 let token = '';
 
@@ -42,7 +42,7 @@ describe('PropertyController', () => {
         .send({ ...property })
         .end((err, res) => {
           const { status, message } = res.body;
-
+          console.log(res.body);
           expect(status).to.equal('error');
           expect(message).to.equal('Owner does not exist');
           done();

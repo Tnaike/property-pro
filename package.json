@@ -6,7 +6,8 @@
     "start": "node ./dist/index",
     "build": "babel src --out-dir dist",
     "start:dev:server": "nodemon --watch ./src --exec \"npm run build && npm start\"",
-    "test": "nodemon --watch ./__test__ --exec \"mocha --exit -r @babel/register ./__test__/**/*.spec.js\""
+    "test": "mocha --exit -r @babel/register ./__test__/**/*.spec.js",
+    "test:dev": "nodemon --watch ./__test__ --exec \"mocha --exit -r @babel/register ./__test__/**/*.spec.js\""
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.5.0",
