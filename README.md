@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Tbaze/property-pro.svg?branch=develop)](https://travis-ci.org/Tbaze/property-pro)
+
 # Property Pro
 Property Pro is a platform where people can create and/or search properties for sale or rent.
 
