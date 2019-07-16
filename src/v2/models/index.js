@@ -1,7 +1,10 @@
 import { Pool } from 'pg';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const pool = new Pool({
-  connectionString: 'postgres://postgres:Datakey01@127.0.0.1:5432/postgres'
+  connectionString: process.env.DATABASE_URL
 });
 
 export default {

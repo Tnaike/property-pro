@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/v1', apiVersionOneRoute);
 app.use('/api/v2', apiVersionTwoRoute);
+app.use('/', (req, res) => res.status(200).json({ status: 'success', message: 'PropertyPro property management.' }));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Application Started on port ${port}...`));
