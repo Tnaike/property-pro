@@ -98,6 +98,11 @@ class PropertyController {
       .status(200)
       .json({ status: 'success', data: { message: 'Property deleted.' } });
   }
+
+  static async getAllProperties(req, res) {
+    const properties = await PropertyModel.findAll();
+    return res.status(200).json({ data: { properties } });
+  }
 }
 
 export default PropertyController;
