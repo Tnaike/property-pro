@@ -28,6 +28,41 @@ class PropertyController {
     property = await PropertyModel.add(property);
     return res.status(201).json({ status: 'success', data: property });
   }
+
+  static async edit(req, res) {
+    const { id } = req.params;
+    const editableFields = [
+      'title',
+      'price',
+      'state',
+      'city',
+      'address',
+      'type',
+      'image_url',
+      'description',
+      'bathroom',
+      'bedroom'
+    ];
+
+    const propertyUpdate = {};
+    editableFields.forEach((field) => {
+      if (req.body[field]) {
+        propertyUpdate[field] = req.body[field];
+      }
+    });
+    let property = await PropertyModel.findProperty(id);
+
+    if (!property) {
+      return res
+        .status(404)
+        .json({ status: 'error', message: 'Property not found' });
+    }
+    property = { ...property, ...propertyUpdate };
+    property = await PropertyModel.update(property);
+    return res
+      .status(200)
+      .json({ status: 'success', data: { property } });
+  }
 }
 
 export default PropertyController;
