@@ -55,7 +55,7 @@ class PropertyController {
     if (!property) {
       return res
         .status(404)
-        .json({ status: 'error', message: 'Property not found' });
+        .json({ status: 'error', error: 'Property not found' });
     }
     property = { ...property, ...propertyUpdate };
     property = await PropertyModel.update(property);
@@ -74,7 +74,7 @@ class PropertyController {
     if (!property) {
       return res
         .status(404)
-        .json({ status: 'error', message: 'Property not found' });
+        .json({ status: 'error', error: 'Property not found' });
     }
     property = await PropertyModel.sale(id);
     return res
@@ -91,7 +91,7 @@ class PropertyController {
     if (!property) {
       return res
         .status(404)
-        .json({ status: 'error', message: 'Property not found' });
+        .json({ status: 'error', error: 'Property not found' });
     }
     property = await PropertyModel.delete(id);
     return res
