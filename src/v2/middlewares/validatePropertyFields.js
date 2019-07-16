@@ -1,12 +1,7 @@
 import validate from 'validate.js';
 
 const constraints = {
-  price: {
-    presence: true,
-    numericality: {
-      greaterThan: 0
-    }
-  }
+
 };
 
 export default (req, res, next) => {
