@@ -110,6 +110,12 @@ class PropertyController {
     const properties = await PropertyModel.findOwnerProperties(id);
     return res.status(200).json({ data: { properties } });
   }
+
+  static async getProperty(req, res) {
+    const { id } = req.params;
+    const property = await PropertyModel.findProperty(id);
+    return res.status(200).json({ data: { property } });
+  }
 }
 
 export default PropertyController;
