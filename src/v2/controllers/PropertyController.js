@@ -81,6 +81,23 @@ class PropertyController {
       .status(200)
       .json({ status: 'success', data: { property } });
   }
+
+  static async delete(req, res) {
+    const { id } = req.params;
+    const accessToken = req.headers['x-access-token'];
+    const { id: ownerId } = jwt.decode(accessToken);
+    let property = await PropertyModel.findOwnerProperty(id, ownerId);
+
+    if (!property) {
+      return res
+        .status(404)
+        .json({ status: 'error', message: 'Property not found' });
+    }
+    property = await PropertyModel.delete(id);
+    return res
+      .status(200)
+      .json({ status: 'success', data: { message: 'Property deleted.' } });
+  }
 }
 
 export default PropertyController;
