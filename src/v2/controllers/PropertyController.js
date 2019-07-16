@@ -103,6 +103,13 @@ class PropertyController {
     const properties = await PropertyModel.findAll();
     return res.status(200).json({ data: { properties } });
   }
+
+  static async getAllOwnerProperties(req, res) {
+    const accessToken = req.headers['x-access-token'];
+    const { id } = jwt.decode(accessToken);
+    const properties = await PropertyModel.findOwnerProperties(id);
+    return res.status(200).json({ data: { properties } });
+  }
 }
 
 export default PropertyController;
