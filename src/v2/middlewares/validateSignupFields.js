@@ -55,7 +55,7 @@ export default (req, res, next) => {
   if (validationErrors) {
     return res.status(400).json({
       status: 'error',
-      message: validationErrors
+      error: validationErrors
     });
   }
   return next();

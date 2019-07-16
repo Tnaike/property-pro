@@ -13,7 +13,7 @@ class AuthController {
     if (!registeredUser.rows.length) {
       return res.status(404).json({
         status: 'error',
-        message: 'Invalid email address or password'
+        error: 'Invalid email address or password'
       });
     }
     const { id } = registeredUser.rows[0];
@@ -42,7 +42,7 @@ class AuthController {
       if (isExistingUser.rows.length > 0) {
         return res.status(409).json({
           status: 'error',
-          message: 'Email address has already been registered'
+          error: 'Email address has already been registered'
         });
       }
 
@@ -70,7 +70,7 @@ class AuthController {
         }
       });
     } catch (e) {
-      return res.status(501).json({ status: 'error', message: 'Internal server error.' });
+      return res.status(501).json({ status: 'error', error: 'Internal server error.' });
     }
   }
 }
