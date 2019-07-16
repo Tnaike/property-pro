@@ -6,6 +6,26 @@ import UserModel from '../models/User';
 dotenv.config();
 
 class AuthController {
+  static async signin(req, res) {
+    const { email, password } = req.body;
+    const registeredUser = await UserModel.findUser(email, password);
+
+    if (!registeredUser.rows.length) {
+      return res.status(404).json({
+        status: 'error',
+        message: 'Invalid email address or password'
+      });
+    }
+    const { id } = registeredUser.rows[0];
+    const token = jwt.sign({ id }, process.env.TOKEN_SECRET);
+    return res
+      .status(200)
+      .json({
+        status: 'success',
+        data: { token }
+      });
+  }
+
   static async signup(req, res) {
     const {
       email,
