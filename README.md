@@ -10,7 +10,7 @@ Property Pro is a platform where people can create and/or search properties for 
 ### User Interface
 The UI is hosted on gh-pages
 * [Landing Page](https://tbaze.github.io/property-pro/)
-* [User Dashboard](https://tbaze.github.io/property-pro/)
+* [User Dashboard](https://tbaze.github.io/property-pro/member/dashboard)
 
 ### Features
 - User can sign up.
