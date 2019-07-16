@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Tbaze/property-pro.svg?branch=develop)](https://travis-ci.org/Tbaze/property-pro)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7746eb86523298a44a65/maintainability)](https://codeclimate.com/github/Tbaze/property-pro/maintainability)
 
 # Property Pro
 Property Pro is a platform where people can create and/or search properties for sale or rent.
