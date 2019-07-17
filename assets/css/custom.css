@@ -760,7 +760,7 @@ input-placeholder, .form_box input-placeholder {font-family:'Poppins', sans-seri
     #page-content-wrapper {padding:0px;padding-top: 10px;}
     .pad-lr-0{padding-right:0!important; padding-left:0!important;}
     .main-content .page-header {font-size:1.1em;}
-    .lst_group-item .lstg__catType {display: inline-block; top: 0; left: 0; right:auto;}
+    /* .lst_group-item .lstg__catType {display: inline-block; top: 0; left: 0; right:auto;} */
     .lst_group-item .list-group__lbl>p {font-size: 12px;}
 }
 @media screen and (max-width:400px){
