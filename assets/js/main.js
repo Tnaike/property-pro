@@ -1,33 +1,27 @@
 // MODAL FUNCTION
-const reportBtn = document.querySelector('.reportThis');
+const modalBtn = document.querySelector('.reportThis');
 const closeBtn = document.querySelector('.close');
 const modalForm = document.querySelector('#reportThis');
 
-const modalFunction = () => {
-modalForm.classList.add('block');
-}
-reportBtn.addEventListener('click', modalFunction);
+if(modalBtn){
+  modalBtn.addEventListener('click', () => modalFunction());
 
-const modalClose = () => {
-  modalForm.classList.remove('block');
-}
-closeBtn.addEventListener('click', modalClose);
+  closeBtn.addEventListener('click', () => modalClose());
 
+  const modalFunction = () => modalForm.classList.add('block');
+  const modalClose = () => modalForm.classList.remove('block');
+}
 
 //  MOBILE SLIDE NAVIGATION
-$(document).ready(function() {
-  $('#sidebar-toggle').click(function(i) {
-    i.preventDefault();
-    $('#main-wrapper').toggleClass('toggled');
-  $('body').toggleClass('body-out');
-    $('#overlay').toggle();
+const toggleBtn = document.querySelector('#sidebar-toggle');
+const mainContent = document.querySelector('#main-wrapper');
+const body = document.querySelector('body');
+const overlay = document.querySelector('#overlay');
+
+if(toggleBtn){
+  toggleBtn.addEventListener('click', () => {
+    mainContent.classList.toggle('toggled');
+    body.classList.toggle('body-out');
+    overlay.classList.toggle('block');
   });
-
-  $('#overlay').click(function() {
-    $('#overlay').hide('200');
-    $('#main-wrapper').removeClass('toggled');
-  $('body').removeClass('body-out');
-});	  
-});
-
-
+}
